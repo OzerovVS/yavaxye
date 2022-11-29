@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\testspeed\testspeed\bin\Debug\net6.0\testspeed.exe
+C:\Users\user\source\repos\testspeed\testspeed\bin\Debug\net6.0\testspeed.deps.json
+C:\Users\user\source\repos\testspeed\testspeed\bin\Debug\net6.0\testspeed.runtimeconfig.json
+C:\Users\user\source\repos\testspeed\testspeed\bin\Debug\net6.0\testspeed.dll
+C:\Users\user\source\repos\testspeed\testspeed\bin\Debug\net6.0\testspeed.pdb
+C:\Users\user\source\repos\testspeed\testspeed\obj\Debug\net6.0\testspeed.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\testspeed\testspeed\obj\Debug\net6.0\testspeed.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\testspeed\testspeed\obj\Debug\net6.0\testspeed.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\testspeed\testspeed\obj\Debug\net6.0\testspeed.AssemblyInfo.cs
+C:\Users\user\source\repos\testspeed\testspeed\obj\Debug\net6.0\testspeed.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\testspeed\testspeed\obj\Debug\net6.0\testspeed.dll
+C:\Users\user\source\repos\testspeed\testspeed\obj\Debug\net6.0\refint\testspeed.dll
+C:\Users\user\source\repos\testspeed\testspeed\obj\Debug\net6.0\testspeed.pdb
+C:\Users\user\source\repos\testspeed\testspeed\obj\Debug\net6.0\testspeed.genruntimeconfig.cache
+C:\Users\user\source\repos\testspeed\testspeed\obj\Debug\net6.0\ref\testspeed.dll

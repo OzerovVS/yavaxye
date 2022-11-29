@@ -1,0 +1,2 @@
+﻿using testspeed;
+baze.baza();
