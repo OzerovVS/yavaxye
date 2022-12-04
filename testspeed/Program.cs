@@ -12,7 +12,7 @@ namespace ConsoleApp1
     {
         public delegate void Massage();
         static private List<res> vse = new List<res>();
-        public static void apchihba(string name, int svm, double svs)
+        public static void apchihba(string name, int svm, float svs)
         {
             res p = new res();
             p.Name = name;
@@ -32,12 +32,11 @@ namespace ConsoleApp1
             {
                 Console.Clear();
                 Console.WriteLine("Список лидеров");
-                Console.WriteLine();
                 vse.Sort((x, y) =>
                 {
-                    int ret = String.Compare(x.svm, y.svm);
+                    int ret = String.Compare(y.svm, x.svm);
                     return ret != 0 ? ret :
-                    y.svm.CompareTo(x.svm);
+                    x.svm.CompareTo(y.svm);
                 });
                 foreach (res res in vse)
                 {
@@ -56,6 +55,9 @@ namespace ConsoleApp1
 
     class Program
     {
+        private static int u;
+        private static int resi;
+
         static void Main(string[] args)
         {
             while (true)
@@ -76,7 +78,7 @@ namespace ConsoleApp1
                 int pos = 0;
                 int sop = 0;
                 int i = 0;
-                string txt = "Привет как дела что делаешь? Для чего живешь? Зачем существует этот текст?...Привет как дела что делаешь? Для чего живешь? Зачем существует этот текст?...Привет как дела что делаешь? Для чего живешь? Зачем существует этот текст?...Привет как дела что делаешь? Для чего живешь? Зачем существует этот текст?...Привет как дела что делаешь? Для чего живешь? Зачем существует этот текст?...Привет как дела что делаешь? Для чего живешь? Зачем существует этот текст?...Привет как дела что делаешь? Для чего живешь? Зачем существует этот текст?...Привет как дела что делаешь? Для чего живешь? Зачем существует этот текст?...";
+                string txt = "Боль никто простейшим упрекнуть предаваться справедливости, пользы вами приносило великие некоей: наслаждений. Страдания предпочел, вы постигают нас немалое восхваляющих раз из-за тягостными eсли представление приносило я иной простейшим избегал воспользоваться, наслаждений как кто всю неприятностей возникают. Жизни ни лишь, по, когда презирает, разъясню человек истину стал упрекнуть или боль: то иной, возжаждал — порицающих избегает обстоятельства но. Некое перед, из наслаждение возникает вами наслаждению: если это приносило немалое, говорил некоей такие иной простейшим разъясню никакого. ";
                 char[] text = txt.ToCharArray();
                 ConsoleKeyInfo ch;
                 do
@@ -107,7 +109,11 @@ namespace ConsoleApp1
                             pos++;
                         }
                         i++;
-
+                        if (i == text.Length)
+                        {
+                            u = 0;
+                            ch = Console.ReadKey();
+                        }
                     }
                     else
                     {
@@ -118,18 +124,17 @@ namespace ConsoleApp1
                 }
                 if (i == 0)
                 {
-                    ser.apchihba(n, i, i / 10);
+                    ser.apchihba(n, 0, 0);
                 }
                 else
                 {
-                    ser.apchihba(n, i++, (double)i / 10);
+                    ser.apchihba(n, i * (60 / resi), i / resi);
                 }
                 ser.serializacia();
                 void timer()
                 {
-                    int u = 10;
-                    Stopwatch a = new Stopwatch();
-                    a.Start();
+                    resi = -1;
+                    u = 60;
                     do
                     {
                         Console.SetCursorPosition(10, 10);
@@ -140,14 +145,14 @@ namespace ConsoleApp1
                             Console.ForegroundColor = ConsoleColor.White;
                             Console.WriteLine("1:0");
                             u--;
+                            resi++;
                         }
                         else
                         {
                             Console.ForegroundColor = ConsoleColor.White;
                             Console.WriteLine($"0:{u}");
                             u--;
-                            if (u == 0)
-                                a.Stop();
+                            resi++;
                         }
                         Thread.Sleep(1000);
                         Console.SetCursorPosition(10, 10);
@@ -157,8 +162,8 @@ namespace ConsoleApp1
                     Console.SetCursorPosition(10, 10);
                     Console.WriteLine($"0:{u}");
                     tm = 1;
-                    Console.SetCursorPosition(8, 8);
-                    Console.WriteLine("Stop!");
+                    Console.SetCursorPosition(8, 7);
+                    Console.WriteLine("Stop!\n        Нажмите любую клавишу, чтобы продолжить...");
                     //Console.ForegroundColor = ConsoleColor.White;
                     //Console.WriteLine((Int32)a.Elapsed.TotalSeconds + 1);
                 }
