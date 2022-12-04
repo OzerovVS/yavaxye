@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "jfEOvxyS5NtwUG3WP3ZEi7HJgb39H+KdePizpQ8oXwBnm5RxZ3klThFF2VvVl14IhVGCHjnncQ0a3aJgqXl1Pw==",
+  "dgSpecHash": "lPBwg6pf6OgFoPtu6cf3Xfr7BJXMGcKlZv1vXno77AiYLWao2MBltGeTBx+rHV1P9INQ0Xh4d6u0gBBbQhh6Bw==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\source\\repos\\testspeed\\testspeed\\testspeed.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

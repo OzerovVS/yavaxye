@@ -13,3 +13,5 @@ C:\Users\user\source\repos\testspeed\testspeed\obj\Debug\net6.0\refint\testspeed
 C:\Users\user\source\repos\testspeed\testspeed\obj\Debug\net6.0\testspeed.pdb
 C:\Users\user\source\repos\testspeed\testspeed\obj\Debug\net6.0\testspeed.genruntimeconfig.cache
 C:\Users\user\source\repos\testspeed\testspeed\obj\Debug\net6.0\ref\testspeed.dll
+C:\Users\user\source\repos\testspeed\testspeed\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\user\source\repos\testspeed\testspeed\obj\Debug\net6.0\testspeed.csproj.CopyComplete
